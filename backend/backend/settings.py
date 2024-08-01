@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crowddataAPI',
     'rest_framework',
+    'alert',
 ]
 
 MIDDLEWARE = [
