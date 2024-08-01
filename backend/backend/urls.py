@@ -18,5 +18,5 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('addtwo',include('crowddataAPI.urls'))
+    path('api/alert/', include('alert.urls')),
 ]
