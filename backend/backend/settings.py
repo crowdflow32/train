@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
+<<<<<<< HEAD
         'NAME': 'crowdflow',
         'ENFORCE_SCHEMA': False,
+=======
+        'NAME': "crowdflow",
+>>>>>>> 777f31074539ac3ca19a514db252e435a4047ba0
     }
 }
 
