@@ -1,0 +1,108 @@
+@media screen and (max-width: 800px) {
+  header {
+    margin: 10px;
+    background-color: #b2b5fd;
+    border-radius: 25px;
+  }
+  header h4 {
+    background-color: #e4dad2;
+    margin: 10px;
+    font-size: 0.9rem;
+    padding: 5px;
+    border-radius: 45px 90px;
+  }
+
+  main .container {
+    background-color: #d1acff;
+    margin: 20px;
+    width: 90%;
+    border-radius: 25px;
+    padding: 10px;
+  }
+
+  main .container .row {
+    padding-left: 55px;
+  }
+
+  main .container .card {
+    margin-left: 25px;
+    margin-top: 5px;
+    border-radius: 25px;
+  }
+
+  main .coach .card {
+    border-radius: 15px 50px;
+    background-color: #b2ddfd;
+    padding: 70px 0;
+    height: 90px;
+    margin: 5px;
+    text-align: left;
+    padding-left: 10px;
+    width: 90%;
+  }
+
+  .coachContainer {
+    width: 381px;
+    height: 170px;
+    padding-top: 20px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+  }
+  .contain {
+    position: absolute;
+    left: -405px;
+    display: flex;
+    transition: all 5s ease-out;
+  }
+
+  .coach {
+    display: flex;
+    height: 166px;
+    width: 135.3px;
+    border-radius: 10px;
+    transition: all 0.4s ease-out;
+    position: relative;
+    left: 0;
+  }
+  .coach:not(:first-child) {
+    margin-left: -36px;
+  }
+  .coach:hover {
+    filter: grayscale(0);
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    cursor: pointer;
+  }
+  .coach:hover ~ .mobilecard {
+    position: relative;
+    left: 20px;
+    transition: 0.4s ease-out;
+  }
+
+  .coachSlide {
+    animation: inspirescrollmobile 20s linear infinite;
+  }
+  .coachSlide:hover {
+    animation-play-state: paused;
+  }
+  @keyframes inspirescrollmobile {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(-600px);
+    }
+    100% {
+      -webkit-transform: translateX(calc(0));
+      transform: translateX(calc(780px));
+    }
+  }
+
+  footer {
+    padding: 10px 10px 0 0;
+    font-size: 8px;
+    position: fixed;
+    bottom: 0;
+    background-color: #e4dad2;
+    width: 100%;
+  }
+}
